@@ -32,16 +32,16 @@ $y = $_GET["y"];
 		<img src="rsc/exp1.png" alt="Expresion 1" width="200" height="80"><br>
 			<p>Resultado = <?php echo expresion1($x,$y)?></p>
 
-		<img src="rsc/exp2.png" alt="Expresion 1" width="200" height="100"><br>
+		<img src="rsc/exp2.png" alt="Expresion 2" width="200" height="100"><br>
 			<p>Resultado = <?php echo expresion2($x)?> </p>
 
-		<img src="rsc/exp3.png" alt="Expresion 1" width="200" height="100"><br>
+		<img src="rsc/exp3.png" alt="Expresion 3" width="200" height="100"><br>
 			<p>Resultado = <?php echo expresion3($x)?></p>
 
-		<img src="rsc/exp4.png" alt="Expresion 1" width="200" height="100"><br>
+		<img src="rsc/exp4.png" alt="Expresion 4" width="200" height="100"><br>
 			<p>Resultado = <?php echo expresion4($x)?></p>
 
-		<img src="rsc/exp5.png" alt="Expresion 1" width="200" height="100"><br>
+		<img src="rsc/exp5.png" alt="Expresion 5" width="200" height="100"><br>
 			<p>Resultado = <?php echo expresion5($x)?></p>
 
 	</body>
