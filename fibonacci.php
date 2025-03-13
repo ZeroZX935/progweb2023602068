@@ -4,22 +4,18 @@
 </head>
 <body> 
 	 <?php
-	$fibo = [];
+	$fibo;
     	$a = 0;
     	$b = 1;
 	$n=2048;
     	for ($i = 0; $i < $n; $i++) {
-        	$fibo[$i] = $a;
+
+		$fibo = $a;
+		echo $fibo,"<br>";
         	$temp = $a + $b;
         	$a = $b;
         	$b = $temp;
     		}
-				
-		for ($i = 0; $i < $n; $i++) {
-        	echo $fibo[$i], "<br>";
-		
-    		}
-
 	?>
 		
 </body>
