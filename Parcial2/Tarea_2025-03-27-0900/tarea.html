@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<head><meta charset = "utf-8"></head>
+<body>
+	<h2>Serie de números con media moda y mediana</h2>
+<script>
+	let i, sum=0,j=0,mediana;
+	for (i=2;i<=400;i=i+2){ 
+		j++;
+		if(j==100){
+			mediana=(i+i+2)/2;
+		}
+		sum=sum+i;
+		document.write(i+" ");	
+	}
+	document.write("<br>El promedio es: "+sum/200);
+	document.write("<br>La moda es: Todos los números tienen la misma frecuencia");
+	document.write("<br>La mediana es: "+ mediana);
+</script>
+<br>
+<h2>Idioma EFE</h2>
+<script>
+let cadena = "murcielago";
+document.write("Palabra original: "+ cadena+"<br>"); 
+document.write("Palabra en EFE: "); 
+for (let i = 0; i < cadena.length; i++) {
+	if(cadena[i]=='a'|| cadena[i]=='e'||cadena[i]=='i'||cadena[i]=='o'||cadena[i]=='u'){
+		document.write(cadena[i]+"f"+cadena[i]); 
+	} else{
+		document.write(cadena[i]); 
+	}
+}
+</script>
+</body>
