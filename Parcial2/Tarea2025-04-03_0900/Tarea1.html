@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meses</title>
+</head>
+<body>
+    <script>
+        let mes = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+                   'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        let ordinal = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto', 'Sexto',
+                       'Séptimo', 'Octavo', 'Noveno', 'Décimo', 'Décimo Primero', 'Décimo Segundo'];
+
+        document.write("<table border='1'>");
+        document.write("<tr><th>Ordinal</th><th>Mes</th></tr>");
+        for (let i = 0; i < 12; i++) {
+            document.write('<tr><td>' + ordinal[i] + '</td><td>' + mes[i] + '</td></tr>');
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

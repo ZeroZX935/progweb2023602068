@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arreglo</title>
+</head>
+<body>
+    <script>
+        let arreglo = [1,false,2,'sa',3,false,'lu',true,4,'do','s',5];
+ 	let nArreglo = [0,"",true];
+
+        for (let i = 0; i < 12; i++) {
+		if (typeof arreglo[i] === "number") {
+                	nArreglo[0] += arreglo[i]; 
+            	} else if (typeof arreglo[i] === "string") {
+                	nArreglo[1] += arreglo[i];
+            	} else if (typeof arreglo[i] === "boolean") {
+                	nArreglo[2] = nArreglo[2] && arreglo[i];
+            	}
+        }
+        document.write(nArreglo);
+    </script>
+</body>
+</html>
