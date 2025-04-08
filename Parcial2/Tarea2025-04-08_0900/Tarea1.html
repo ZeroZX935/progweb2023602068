@@ -1,0 +1,114 @@
+
+<html>
+	<head>
+		<style>
+			table{
+				border-spacing: 10px 5px;
+			}
+
+			td {
+				font-family: Arial, sans-serif;
+				width: 80px;
+				height: 80px;
+				background-color: #DDA0DD;
+				text-align: center;
+				font-size: 40px;
+				border-radius: 6px;
+
+			}
+			#td1, #td2, #td3, #td4, #td5 {
+				background-color: white;
+			}
+			#tdw, #tda, #tds, #tdd, #tdx, #tdz  {
+				box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+			}
+		</style>
+
+				<script>
+			function agregaListeners() {
+				document.addEventListener("keydown", teclado);
+				document.addEventListener("keyup", teclaSoltada);
+			}
+
+			function teclado(event) {
+				  	switch (event.key.toLowerCase()) {
+               					case "w":
+                    					let tdw = document.getElementById("tdw");
+							tdw.style.backgroundColor = "#800080";
+                    				break;
+               					case "a":
+                    					let tda = document.getElementById("tda");
+							tda.style.backgroundColor = "#800080";
+                    				break;
+               					case "s":
+                    					let tds = document.getElementById("tds");
+							tds.style.backgroundColor = "#800080";
+                    				break;
+               					case "d":
+                    					let tdd = document.getElementById("tdd");
+							tdd.style.backgroundColor = "#800080";
+                    				break;
+               					case "z":
+                    					let tdz = document.getElementById("tdz");
+							tdz.style.backgroundColor = "#800080";
+                    				break;
+               					case "x":
+                    					let tdx = document.getElementById("tdx");
+							tdx.style.backgroundColor = "#800080";
+                    				break;
+						
+					}	
+			}
+			
+			function teclaSoltada(event) {
+				  	switch (event.key.toLowerCase()) {
+               					case "w":
+                    					let tdw = document.getElementById("tdw");
+							tdw.style.backgroundColor = "#DDA0DD";
+                    				break;
+               					case "a":
+                    					let tda = document.getElementById("tda");
+							tda.style.backgroundColor = "#DDA0DD";
+                    				break;
+               					case "s":
+                    					let tds = document.getElementById("tds");
+							tds.style.backgroundColor = "#DDA0DD";
+                    				break;
+               					case "d":
+                    					let tdd = document.getElementById("tdd");
+							tdd.style.backgroundColor = "#DDA0DD";
+                    				break;
+               					case "z":
+                    					let tdz = document.getElementById("tdz");
+							tdz.style.backgroundColor = "#DDA0DD";
+                    				break;
+               					case "x":
+                    					let tdx = document.getElementById("tdx");
+							tdx.style.backgroundColor = "#DDA0DD";
+                    				break;
+						
+					}
+			}
+		</script>
+	</head>
+	<body onload="agregaListeners()">
+		<table>
+			<tr>
+				<td id="td1"> </td> 
+				<td id="tdw">W</td> 
+				<td id="td2"> </td> 
+				<td id="td3"> </td>
+				<td id="td4"> </td> 
+				<td id="td5"> </td>
+			</tr>
+			<tr>
+				<td id="tda">A</td> 
+				<td id="tds">S</td> 
+				<td id="tdd">D</td> 
+				<td id="td2"> </td> 
+				<td id="tdz">Z</td>
+ 				<td id="tdx">X</td>
+			</tr>
+		</table>
+	</body>
+</html>

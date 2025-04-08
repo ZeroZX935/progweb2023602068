@@ -1,0 +1,87 @@
+<html>
+	<head>
+	<style>
+		table {
+  			border-spacing: 10px 5px;
+		}
+		#btnC,#btni{
+			width:170px; height: 80;
+			background-color: #DB7093;
+			
+		}
+		button{
+			font-family: Arial, sans-serif;
+			width:80px; height: 80;
+			background-color: #87CEEB;
+			text-align: center;
+			font-size: 40px;
+			border-radius: 6px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+
+		}
+
+		td{
+			text-align: center;
+
+		}
+		input{
+			width: 300px;
+			height: 40px;
+			padding: 10px;     
+			margin: 8px 0; 
+			border-radius: 6px;
+		}
+			</style>
+		
+	<script>
+		function agregaListeners(){
+			document.addEventListener("keydown",teclado);
+		}
+	function btn_click(val){
+		var display = document.getElementById("display");
+		if (val == '='){
+			display.value = eval(display.value);	
+		}else 	if (val == 'C') {
+                		display.value = '';
+            		} else{
+				display.value += val;	
+			}
+		}
+	</script>
+	
+	</head>
+	<body onload="agregaListeners()">
+		<table>
+			<tr>
+				<td colspan="5"><form><input id="display"></input></form></td>
+			</tr>
+			<tr>
+            		<td><button onclick="btn_click('7')">7</button></td>
+           			<td><button onclick="btn_click('8')">8</button></td>
+            		<td><button onclick="btn_click('9')">9</button></td>
+					<td colspan="2"><button id="btnC" onclick="btn_click('C')">C</button></td>
+				
+			</tr>
+			<tr>
+				<td><button onclick="btn_click('4')">4</button></td> 
+				<td><button onclick="btn_click('5')">5</button></td> 
+				<td><button onclick="btn_click('6')">6</button></td> 
+				<td><button onclick="btn_click('*')">X</button></td> 
+				<td><button onclick="btn_click('/')">&#x00F7;</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="btn_click('1')">1</button></td> 
+				<td><button onclick="btn_click('2')">2</button></td> 
+				<td><button onclick="btn_click('3')">3</button></td> 
+				<td><button onclick="btn_click('+')">+</button></td> 
+				<td><button onclick="btn_click('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="btn_click('0')">0</button></td> 
+				<td><button onclick="btn_click('.')">.</button></td> 
+				<td></td>
+				<td colspan="2"><button id="btni" onclick="btn_click('=')">=</button></td>
+			</tr>
+		</table> 
+	</body>
+</html>
